@@ -1,104 +1,183 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROYECTOS DE BENJAMIN</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Portfolio de Benjamin</title>
+
     <link rel="stylesheet" href="CSS/styles.css">
-<link rel="stylesheet" href="CSS/benja.css">
-
+    <link rel="stylesheet" href="CSS/benja.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">PORTAFOLIO DE BENJAMIN</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Enlace</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Abajo
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Accion</a></li>
-            <li><a class="dropdown-item" href="#">Otra accion</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Algo mas aqui </a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true"></a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-    </div>
-  </div> </nav>
 
-     
- 
- <main class="main">
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    
-    <!-- Tarjeta 1 -->
-    <div class="col- caja">
-      <div class="card-container">
-        <!-- ENLACE EN LA IMAGEN 1 -->
-        <a href="https://benjaminsanchez09786-hash.github.io/TSC-Tapizados/" target="_blank">
-          <img src="img/tapizados.png" class="card-tapiceria" alt="Miniatura del Proyecto 1">
-        </a>
-        <div class="card-body pepe">
-          <h5 class="card-title">TAPICERIA</h5>
-          <p class="card-text">This is a longer card with supporting text...</p>
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">BENJAMIN SANCHEZ</a>
+
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- INICIO -->
+    <main>
+
+        <section id="inicio" class="hero">
+            <p class="hero-small">PORTFOLIO PERSONAL</p>
+
+            <h1>
+                Hola, soy <span>Benjamin</span>
+            </h1>
+
+            <p class="hero-description">
+                Este es mi espacio donde muestro algunos de mis proyectos
+                y cosas que voy aprendiendo en programación.
+            </p>
+
+            <a href="#proyectos" class="hero-button">
+                Ver mis proyectos
+            </a>
+        </section>
+
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="projects">
+
+            <div class="section-title">
+                <p>MI TRABAJO</p>
+                <h2>Proyectos</h2>
+            </div>
+
+
+            <div class="project-grid">
+
+                <!-- PROYECTO 1 -->
+                <article class="project-card">
+
+                    <a
+                        href="https://benjaminsanchez09786-hash.github.io/TSC-Tapizados/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="img/tapizados.png"
+                            alt="Vista previa del proyecto Tapicería"
+                        >
+                    </a>
+
+                    <div class="project-info">
+                        <p class="project-number">01</p>
+
+                        <h3>Tapicería</h3>
+
+                        <p>
+                            Página web creada para presentar los servicios
+                            de un negocio de tapicería.
+                        </p>
+
+                        <a
+                            href="https://benjaminsanchez09786-hash.github.io/TSC-Tapizados/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            Ver proyecto →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- PROYECTO 2 -->
+                <article class="project-card">
+
+                    <a
+                        href="https://benjaminsanchez09786-hash.github.io/CIMIENTOS-libro-web/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="img/CIMIENTOS.png"
+                            alt="Vista previa del proyecto Cimientos"
+                        >
+                    </a>
+
+                    <div class="project-info">
+                        <p class="project-number">02</p>
+
+                        <h3>Cimientos</h3>
+
+                        <p>
+                            Proyecto web relacionado con aprendizaje
+                            y programación.
+                        </p>
+
+                        <a
+                            href="https://benjaminsanchez09786-hash.github.io/CIMIENTOS-libro-web/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            Ver proyecto →
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- CONTACTO -->
+    <footer id="contacto" class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <p class="footer-label">CONTACTO</p>
+                <h2>¿Hablamos?</h2>
+            </div>
+
+            <div class="contact-info">
+                <p>📧Email: benjaminsanchez09786@gmail.com</p>
+                <p>📍Ubicación: Colonia del sacramento, Uruguay</p>
+                <p>📞Teléfono: +598 098 540 335</p>
+              </div>
+
+
         </div>
-      </div>
-    </div>
 
-    <!-- Tarjeta 2 -->
-    <div class="col caja">
-      <div class="card-containe">
-        <!-- ENLACE EN LA IMAGEN 2 -->
-        <a href="https://benjaminsanchez09786-hash.github.io/CIMIENTOS-libro-web/" target="_blank">
-          <img src="img/CIMIENTOS.png" class="card-cimientos" alt="Miniatura del Proyecto 2">
-        </a>
-        <div class="card-body pepe">
-          <h5 class="card-title">CIMIENTOS</h5>
-          <p class="card-text">This is a longer card with supporting text...</p>
+        <div class="copyright">
+            <p>© 2026 Benjamin. Todos los derechos reservados.</p>
         </div>
-      </div>
-    </div>
 
-   
+    </footer>
+  
+    <script src="JS/script.js"></script>
+<a
+  
+ href="https://wa.me/59898540335"
+    class="whatsapp-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactarme por WhatsApp"
+>
+    <span>☏</span>
+</a>
 
-  </div>
-
-</main>
 
 
-
-<footer class="pie-pagina footer">
-  <div class="contacto-contenedor">
-    <h3>Contacto</h3>
-    <p>📧 Email: contacto@tuempresa.com</p>
-    <p>📞 Teléfono: +123 456 789</p>
-    <p>📍 Ubicación: Ciudad, País</p>
-  </div>
-  <div class="copyright">
-    <p>&copy; 2026 Tu Empresa. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-    
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </html>
